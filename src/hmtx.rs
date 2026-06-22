@@ -1,6 +1,5 @@
 use crate::{
     endian::{FWordBE, UFWordBE},
-    fword::FWord,
     hhea::HheaTable,
     maxp::MaxpTable,
     parser::TableRecord,
@@ -13,10 +12,10 @@ pub struct HmtxHeader<'a> {
     /// Paired advance width and left side bearing values for each glyph. Records are indexed by glyph ID.
     pub h_metrics: &'a [LongHorMetric],
     /// Left side bearings for glyph IDs greater than or equal to numberOfHMetrics.
-    pub left_side_bearings: &'a [FWord],
+    pub left_side_bearings: &'a [FWordBE],
 }
 
-#[repr(C)]
+#[repr(C, packed)]
 pub struct LongHorMetric {
     pub advance_width: UFWordBE,
     pub lsb: FWordBE,
