@@ -1,12 +1,9 @@
 [package]
-name = "jessie-ttf-parser"
-version = "1.1.1"
+name = "const-ttf"
+version = "1.0.0"
 edition = "2024"
-description = "A TrueType parser that is meant to keep as much information as possible."
-license = "0BSD"
+description = "A TrueType parser that can work at compile time."
+license = "MIT"
 
 [dependencies]
 
-[package.metadata.docs.rs]
-
-rustdoc-args = ["--theme" , "./earl_grey.css","--default-theme=earl_grey"]

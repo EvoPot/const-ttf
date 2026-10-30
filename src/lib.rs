@@ -4,7 +4,7 @@
 //! ### Usage example :
 //!
 //! ```rust
-//! use jessie_ttf_parser::parser::Parser;
+//! use const_ttf::parser::Parser;
 //! fn main() -> Result<(),()> {
 //!     let bytes = include_bytes!("path/to/font/file.ttf");
 //!     let mut parser = Parser::new(bytes);

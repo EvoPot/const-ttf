@@ -1,11 +1,11 @@
-# jessie-ttf-parser
+# const-ttf
 
-A `const` TrueType parser that is made to keep as much information as possible.
+A TrueType parser that can work at compile time.
 
 ### Usage example :
 
 ```rust
-use jessie_ttf_parser::parser::Parser;
+use const_ttf::parser::Parser;
 fn main() -> Result<(),()> {
     let bytes = include_bytes!("path/to/font/file.ttf");
     let mut parser = Parser::new(bytes);
